@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zalbi Zadain - XI TI</title>
+    <style>
+      .container {
+        width: 100%;
+        margin: auto;
+        display: grid;
+        column-gap: 5px;
+        row-gap: 5px;
+      }
+      .baris1 {
+        display: grid;
+        grid-template-columns: 50% 16.4% 16.4% 16.4%;
+        grid-template-rows: 60px;
+        grid-template-areas: "site-tittle nav-1 nav-2 nav-3";
+        column-gap: 5px;
+        row-gap: 5px;
+      }
+      .baris2 {
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-template-rows: 60px;
+        grid-template-areas: "post-tittle";
+        column-gap: 5px;
+        row-gap: 5px;
+      }
+
+      .site-tittle {
+        grid-area: site-tittle;
+        background: rgb(248, 212, 4);
+      }
+      .nav-1 {
+        grid-area: nav-1;
+        background: pink;
+      }
+      .nav-2 {
+        grid-area: nav-2;
+        background: pink;
+      }
+      .nav-3 {
+        grid-area: nav-3;
+        background: pink;
+      }
+      .post-tittle {
+        grid-area: post-tittle;
+        background: rgb(168, 212, 241);
+      }
+      .baris2-k2 {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 200px 200px 200px 200px 200px;
+        grid-template-areas:
+          "sidebar"
+          "ads"
+          "other-stuffs";
+        column-gap: 5px;
+        row-gap: 5px;
+      }
+      .baris3 {
+        display: grid;
+        grid-template-columns: 20%;
+        grid-template-rows: 545px;
+        grid-template-areas: "post-meta";
+      }
+      .baris4 {
+        display: grid;
+        grid-template-columns: 50%;
+        grid-template-rows: 200px;
+        grid-template-areas:
+          "main-content main-content-image"
+          "";
+      }
+      .baris3-k2 {
+        display: grid;
+        grid-template-columns: 60%;
+        grid-template-rows: 500px;
+        grid-template-areas: "main-content ";
+      }
+      .sidebar {
+        grid-area: sidebar;
+        background: rgb(247, 182, 41);
+      }
+      .post-meta {
+        grid-area: post-meta;
+        background: yellowgreen;
+      }
+      .main-content {
+        grid-area: main-content;
+        background: rgb(68, 29, 207);
+      }
+      .main-content-image {
+        grid-area: main-content-image;
+        background: yellow;
+      }
+      .ads {
+        grid-area: ads;
+        background: darkgreen;
+      }
+      .other-stuffs {
+        grid-area: other-stuffs;
+        background: rgb(235, 10, 167);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="baris1">
+        <div class="site-tittle">Site Tittle</div>
+        <div class="nav-1">Nav1</div>
+        <div class="nav-2">Nav2</div>
+        <div class="nav-3">Nav3</div>
+      </div>
+      <div class="baris2">
+        <div class="post-tittle">Post Tittle</div>
+
+        <div class="baris2-k2">
+          <div class="sidebar">sidebar</div>
+          <div class="ads">Ads</div>
+          <div class="other-stuffs">Other Stuffs</div>
+        </div>
+      </div>
+      <div class="baris3">
+        <div class="post-meta">Post Meta</div>
+        <div class="main-content">Main Content</div>
+        <div class="main-content-image">Main Content Image</div>
+      </div>
+      <div class="baris4">
+        <div class="footer"></div>
+      </div>
+    </div>
+  </body>
+</html>
